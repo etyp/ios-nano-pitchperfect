@@ -72,13 +72,13 @@
                                 <exclude reference="bO4-fA-GoD"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Thm-sU-WNN"/>
-                                <exclude reference="WAd-gy-0MM"/>
                                 <exclude reference="Kfr-Qy-tcl"/>
                                 <exclude reference="X8x-Ri-0pr"/>
                                 <exclude reference="lVf-uE-ioB"/>
                                 <exclude reference="nEs-Vj-uuL"/>
                                 <exclude reference="f19-4U-Qbj"/>
+                                <exclude reference="Thm-sU-WNN"/>
+                                <exclude reference="WAd-gy-0MM"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -87,13 +87,13 @@
                                 <include reference="bO4-fA-GoD"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Thm-sU-WNN"/>
-                                <include reference="WAd-gy-0MM"/>
                                 <include reference="Kfr-Qy-tcl"/>
                                 <include reference="X8x-Ri-0pr"/>
                                 <include reference="lVf-uE-ioB"/>
                                 <include reference="nEs-Vj-uuL"/>
                                 <include reference="f19-4U-Qbj"/>
+                                <include reference="Thm-sU-WNN"/>
+                                <include reference="WAd-gy-0MM"/>
                             </mask>
                         </variation>
                     </view>

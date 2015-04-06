@@ -50,7 +50,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playChipmunkAudio(sender: UIButton) {
-        playAudioWithVariablePitch(2000);
+        playAudioWithVariablePitch(1000);
     }
     @IBAction func playDarthvaderAudio(sender: UIButton) {
         playAudioWithVariablePitch(-1000);
@@ -59,9 +59,7 @@ class PlaySoundsViewController: UIViewController {
     func playAudioWithVariablePitch(pitch: Float) {
         stopButton.hidden = false
         
-        audioPlayer.stop();
-        audioEngine.stop();
-        audioEngine.reset();
+        stopEngineAndPlayer();
         
         // Instantiate AVAudioPlayerNode and attach the node to our global engine
         var audioPlayerNode = AVAudioPlayerNode();
@@ -85,16 +83,20 @@ class PlaySoundsViewController: UIViewController {
     func playAudioAtRate(audioRate: Float) {
         stopButton.hidden = false
         
-        audioEngine.stop();
-        audioEngine.reset();
-        audioPlayer.stop();
+        stopEngineAndPlayer();
         audioPlayer.rate = audioRate;
         audioPlayer.play();
     }
     
     @IBAction func stopAudio(sender: UIButton) {
+        stopEngineAndPlayer();
+        stopButton.hidden = true;
+    }
+    
+    func stopEngineAndPlayer() {
+        audioEngine.stop();
+        audioEngine.reset();
         audioPlayer.stop();
-        stopButton.hidden = true
     }
     
 
