@@ -84,6 +84,7 @@ class PlaySoundsViewController: UIViewController {
         stopButton.hidden = false
         
         stopEngineAndPlayer();
+        audioPlayer.currentTime = 0.0
         audioPlayer.rate = audioRate;
         audioPlayer.play();
     }
